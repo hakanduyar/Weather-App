@@ -59,5 +59,11 @@ search.addEventListener("click", () => {
       description.innerHTML = `${json.weather[0].description}`;
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+
+      weatherBox.style.display = "";
+      weatherDetails.style.display = "";
+      weatherBox.classList.add("fadeIn");
+      weatherDetails.classList.add("fadeIn");
+      container.style.height = "590px";
     });
 });
